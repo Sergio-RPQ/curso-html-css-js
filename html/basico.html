@@ -9,7 +9,7 @@
 		Os títulos para parágrafos são definidos pela tag <hn> onde n é o número da relevância do tipo 
 			sendo o maior 1 e o menor 6. Isso é importante pensando na semântica da página.
 	-->
-	<h1>Títulos Hn</h1>
+	<h1 id="titulos">Títulos Hn</h1>
 	<h1>H1 - Título maior relevância</h1>
 	<h2>H2 - Título segunda maior relevância</h2>
 	<h3>H3 - Título terceira maior relevância</h3>
@@ -25,7 +25,77 @@
 	Cras egestas augue nec arcu pulvinar varius. Donec egestas eleifend tortor, ac tempor sem volutpat sit amet. Aliquam eget mattis lacus, eu elementum risus. Ut id dapibus odio, et bibendum justo. Nullam blandit risus sit amet vulputate faucibus. Donec luctus ornare mi nec placerat.
 	</p>
 	<hr>
+	<h1>Tag pre</h1>
+	<p>
+		Meu pé de 
+		laranja lima.
+	</p>
+	<pre>
+		Meu pé de 
+		laranja lima.	
+	</pre>
+	<hr>
+	<h1>Formatações em texto</h1>
+	<pre>
+	<b>      b - texto negrito </b>
+	<strong> strong - texto negrito </strong>
+	<i>      i - texto em itálico </i>
+	<em>     em - texto com êmfase </em>
+	<mark>   mark - texto com marcação </mark>
+	<small>  small - texto pequeno </small>
+	<del>    del - texto deletado</del>
+	<ins>    ins - texto inserido</ins>
+	<sub>    sub - texto inferior</sub>
+	<sup>    sup - texto superior</sup>
+	</pre>	
+	<hr>
+	<h1>Citação e Quotação</h1>
+	<p><b>tag q</b>: O professor dizia: <q>Educação é a chave para uma sociedade melhor.</q></p>
+	<p><b>tag blockquote</b>: O professor dizia: 
+		<blockquote cite="www.educacao.com.br">
+			Educação é a chave para uma sociedade melhor.
+		</blockquote></p>
+	<h1>Abreviações</h1>
+		<p>O <abbr title="Conselho Federal de Contabilidade">CFC</abbr> foi fundado em 1948.</p>
 
+	<h1>Endereços</h1>
+	<address>
+		Fulano de tal.<br> 
+		Rua das acácias, 29<br>
+		Rio de janeiro - RJ<br>
+		Brasil
+	</address>
+	<hr>
+	<h1>Trabalhando com links</h1>
+	<p>Ex 01: link para uma página web.<a href="http://www.google.com">link para o google</a></p>
+	<p>Ex 02: link para uma página web usando atributo target.<a href="http://www.google.com" target="_blank">link para o google</a></p>
+	<p>Ex 03: link para uma ancora na mesma página.<a href="#titulos">link para títulos</a></p>
+	<hr>
+	<h1>Trabalhando com imagens</h1>
+	<img src="../imgs/night.jpg" alt="Fotos a noite" width="300" >
+	<img src="../imgs/empreendedor.jpg" alt="Empreendedorismo no século 21" height="200" >
+	
+	<p>Mapa de imagem</p>
+	<img src="../imgs/apple.jpg" alt="Maçã" usemap="#mapa">
+	<map name="mapa">
+	  <area shape="rect" coords="34,44,270,350" alt="Computer" href="http://www.google.com.br">
+	  <area shape="circle" coords="217,200,44" alt="Phone" href="http://www.yahoo.com.br">  
+	</map>
+
+	<h1>O elemento picture</h1>
+	<p>
+		Este elemento permite controlarmos qual a fonte da imagem de acordo, por exemplo, com as dimensões da janela.
+	</p>
+	<picture>
+		<source media="(min-width: 650px)" srcset="../imgs/apple.jpg">
+		<source media="(min-width: 465px)" srcset="../imgs/tonsverde.jpg">
+		<img src="../imgs/night.jpg" alt="Flowers" style="width:auto;">
+	</picture>
+	<hr>
+	<h1>Tabelas</h1>
+
+
+		
 
 </body>
 </html>
