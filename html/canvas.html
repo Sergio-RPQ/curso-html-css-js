@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trabalhando com Canvas</title>
+	
+</head>
+<body>
+	<h1>Canvas</h1>
+	<p>Define uma área na página onde podemos desenhar </p>
+	<canvas id="primeiro-canvas" width="300" height="150" style="border:1px solid #000000;">
+	</canvas>
+
+	<h1>Desenhando retangulo com js</h1>
+	<canvas id="segundo-canvas" width="300" height="150" style="border:1px solid #000000;"></canvas>
+
+	<h1>Desenhando uma linha com js</h1>
+	<canvas id="terceiro-canvas" width="300" height="150" style="border:1px solid #000000;"></canvas>
+
+	<h1>Desenhando um circulo com js</h1>
+	<canvas id="quarto-canvas" width="300" height="150" style="border:1px solid #000000;"></canvas>
+
+	<h1>Utilizando Gradiente</h1>
+	<canvas id="quinto-canvas" width="300" height="150" style="border:1px solid #000000;"></canvas>
+	<canvas id="sexto-canvas" width="300" height="150" style="border:1px solid #000000;"></canvas>
+
+	<h1>Desenhando texto</h1>
+	<canvas id="setimo-canvas" width="300" height="150" style="border:1px solid #000000;"></canvas>
+	<canvas id="oitavo-canvas" width="300" height="150" style="border:1px solid #000000;"></canvas>
+
+	<h1>Desenhando imagem</h1>
+	<img id="quadro" width="150" src="../imgs/quadro.jpg" alt="Quadro">
+	<canvas id="nono-canvas" width="240" height="297" style="border:1px solid #000000;"></canvas>
+
+	<script>
+		//Desenhando um retângulo
+		var canvas1 = document.getElementById("segundo-canvas");
+		var ctx1 = canvas1.getContext("2d");
+		ctx1.fillStyle = "#FF0000";
+		ctx1.fillRect(5,5,150,75);
+
+		//Desenhando uma linha
+		var canvas2 = document.getElementById("terceiro-canvas");
+		var ctx2 = canvas2.getContext("2d");
+		ctx2.moveTo(0,0);
+		ctx2.lineTo(200,100);
+		ctx2.stroke();
+
+		//Desenhando um circulo
+		var canvas3 = document.getElementById("quarto-canvas");
+		var ctx3 = canvas3.getContext("2d");
+		ctx3.beginPath();
+		ctx3.arc(95,50,40,0,2*Math.PI);
+		ctx3.stroke();
+
+		//Criando um gradiente Linear
+		var c1=document.getElementById("quinto-canvas");
+		var ctx4=c1.getContext("2d");
+
+		// cria o gradiente
+		var grd1=ctx4.createLinearGradient(0,0,200,0);
+		grd1.addColorStop(0,"red");
+		grd1.addColorStop(1,"black");
+
+		// Preencher com gradiente criado
+		ctx4.fillStyle=grd1;
+		ctx4.fillRect(10,10,150,80);
+
+		// Criando um gradiente Radial
+		var c2=document.getElementById("sexto-canvas");
+		var ctx5=c2.getContext("2d");
+
+		// Cria o gradiente
+		var grd2=ctx5.createRadialGradient(75,50,5,90,60,100);
+		grd2.addColorStop(0,"red");
+		grd2.addColorStop(1,"black");
+
+		// Preencher com o gradiente
+		ctx5.fillStyle = grd2;
+		ctx5.fillRect(10,10,150,80);
+
+		// Desenhando textos com filltext
+		var canvas4 = document.getElementById("setimo-canvas");
+		var ctx6 = canvas4.getContext("2d");
+		ctx6.font = "30px Comic Sans MS";
+		ctx6.fillStyle = "red";
+		ctx6.textAlign = "center";
+		ctx6.fillText("Olá Canvas", canvas4.width/2, canvas4.height/2);
+
+		// Desenhando textos com stroketext
+		var canvas5 = document.getElementById("oitavo-canvas");
+		var ctx7 = canvas5.getContext("2d");
+		ctx7.font = "30px Arial";
+		ctx7.strokeText("Olá Canvas",10,50);
+
+		// Desenhando imagem no canvas
+		window.onload = function(){
+			var canvas6 = document.getElementById("nono-canvas");
+    		var ctx8 = canvas6.getContext("2d");
+    		var img = document.getElementById("quadro");
+   			ctx8.drawImage(img, 10, 10);
+   		};
+
+	</script>
+	
+</body>
+</html>
