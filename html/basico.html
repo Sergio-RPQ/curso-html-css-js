@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Página com elemento básicos</title>
 </head>
 <body>
@@ -93,9 +94,178 @@
 	</picture>
 	<hr>
 	<h1>Tabelas</h1>
+	<p>Primeira tabela :</p>
+	<table style="width:30%; border: 1px solid black;">
+		<tr>
+			<th style="border: 1px solid black; padding: 10px;">Primeiro Nome</th>
+			<th style="border: 1px solid black;">Último Nome</th> 
+			<th style="border: 1px solid black;">Idade</th>
+		</tr>
+		<tr>
+			<td style="border-right: 1px solid black; padding: 5px;">Fulano </td>
+			<td style="border-right: 1px solid black;">de Tal</td> 
+			<td align="center">50</td>
+		</tr>
+		<tr>
+			<td style="border-right: 1px solid black; padding: 5px;">Ciclano</td>
+			<td style="border-right: 1px solid black;">de Tal</td> 
+			<td align="center">94</td>
+		</tr>
+		<tr>
+			<td style="border-right: 1px solid black; padding: 5px;">Beltrano</td>
+			<td style="border-right: 1px solid black;">de Tal</td> 
+			<td align="center">45</td>
+		</tr>
+		</table>
+		<p>Tabelas com thead, tfoot, tbody</p>
+		<table border="1" style="width: 30%;">
+		  <thead>
+		    <tr>
+		      <th  style="padding:5px;">Mês</th>
+		      <th  style="padding:5px;">Economia</th>
+		    </tr>
+		  </thead>
+		  <tfoot>
+		    <tr>
+		      <td  style="padding:5px;">Soma</td>
+		      <td  style="padding:5px; text-align: center;">R$180,00</td>
+		    </tr>
+		  </tfoot>
+		  <tbody>
+		    <tr>
+		      <td  style="padding:5px;">Janeiro</td>
+		      <td  style="padding:5px; text-align: center;">R$100,00</td>
+		    </tr>
+		    <tr>
+		      <td  style="padding:5px;">Fevereiro</td>
+		      <td  style="padding:5px; text-align: center;">R$80,00</td>
+		    </tr>
+		  </tbody>
+		</table>	
+		<hr>
+		<h1>Listas</h1>	
+		<p>Listas não ordenadas</p>
+		<ul style="list-style-type:disc;">
+  			<li>Café com leite</li>
+  			<li>Chá</li>
+  			<li>Leite</li>
+		</ul>
+		<ul style="list-style-type:circle;">
+  			<li>Café com leite</li>
+  			<li>Chá</li>
+  			<li>Leite</li>
+		</ul>
+		<ul style="list-style-type:square;">
+  			<li>Café com leite</li>
+  			<li>Chá</li>
+  			<li>Leite</li>
+		</ul>
+		<ul style="list-style-type:none;">
+  			<li>Café com leite</li>
+  			<li>Chá</li>
+  			<li>Leite</li>
+		</ul>
 
+		<p>Lista Ordenadas</p>
+		<ol type="1">
+  			<li>Café</li>
+  			<li>Chá</li>
+  			<li>Leite</li>
+		</ol>
+		<ol type="A">
+  			<li>Café</li>
+  			<li>Chá</li>
+  			<li>Leite</li>
+		</ol>
+		<ol type="a">
+  			<li>Café</li>
+  			<li>Chá</li>
+  			<li>Leite</li>
+		</ol>
+		<ol type="I">
+  			<li>Café</li>
+  			<li>Chá</li>
+  			<li>Leite</li>
+		</ol>
+		<ol type="i">
+  			<li>Café</li>
+  			<li>Chá</li>
+  			<li>Leite</li>
+		</ol>
 
-		
+		<p>Listas de Definição</p>
+		<dl>
+  			<dt>Café</dt>
+  			<dd>- Café preto muído na hora</dd>
+  			<dt>Leite</dt>
+  			<dd>- Leite com chocolate </dd>
+		</dl>
 
-</body>
+		<p>Listas Aninhadas</p>
+		<ul>
+		  <li>Café</li>
+		  <li>Chá
+		    <ul>
+		      <li>Chá Preto</li>
+		      <li>Chá Verde</li>
+		    </ul>
+		  </li>
+		  <li>Leite</li>
+		</ul>
+		<hr>
+		<h1>Containers layout semântico</h1>
+		<img src="../imgs/html_container.gif" title="containers" >
+			<pre>
+			header 	- Define uma seção de cabeçalho ao documento
+			nav 	- Define um container para navegação
+			section - Define um seção no documento
+			article - Define um container para um artigo
+			aside 	- Define um container para side bar
+			footer 	- Define um rodapé para o documento
+			details - Define um container para detalhes
+			summary - Define um cabeçalho para o details
+			</pre>				
+		<hr>
+		<h1>Exibir trecho de código fonte</h1>	
+		<code>
+			x = 5;<br>
+			y = 6;<br>
+			z = x + y;
+		</code>
+		<p>Representar entrada do usuário:</p>
+		<p>Salve o documento com <kbd>Ctrl + S</kbd></p>
+		<p>Representar saída do programa</p>
+		<p>Se a entrada estiver inválida o programa retornará <samp>Error!</samp></p>
+		<p>Representar formulas matemáticas</p>
+		Einstein escreveu: <var>E</var> = <var>mc</var><sup>2</sup>.
+		<hr>
+		<h1>Entidades especiais</h1>
+		<pre>
+			<code>
+			non-breaking space						&nbsp;	&#160;
+			<	less than							&lt;	&#60;
+			>	greater than						&gt;	&#62;
+			&	ampersand							&amp;	&#38;
+			"	double quotation mark				&quot;	&#34;
+			'	single quotation mark (apostrophe)	&apos;	&#39;
+			¢	cent								&cent;	&#162;
+			£	pound								&pound;	&#163;
+			¥	yen									&yen;	&#165;
+			€	euro								&euro;	&#8364;
+			©	copyright							&copy;	&#169;
+			®	registered trademark				&reg;	&#174;
+			∀	&#8704;								&forall;
+			∂	&#8706;								&part;	
+			∃	&#8707;								&exist;	
+			∅	&#8709;								&empty;	
+			∇	&#8711;								&nabla;	
+			∈	&#8712;								&isin;	
+			∉	&#8713;								&notin;	
+			∋	&#8715;								&ni;	
+			∏	&#8719;								&prod;	
+			∑	&#8721;								&sum;
+			</code>
+		</pre>
+
+	</body>
 </html>
