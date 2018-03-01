@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="with=device-with, initial-scale=1.0">
+	<title>Trabalhando com formulários</title>
+
+	<style type="text/css" media="screen">
+
+		.conteudo {
+			width:  48%;
+			float: left;
+		}
+
+		
+	</style>
+	
+</head>
+<body>
+	<div class="conteudo">
+		<h1 class="titulos">Formulário 01</h1>
+		<form action="#" method="get" accept-charset="utf-8" id="formulario01" class="formularios">
+
+			<fieldset>
+	    		<legend>Informações Pessoas:</legend>
+	    		Primeiro Nome:<br>
+	    		<input type="text" name="firstname" value=""><br>
+	    		Sobre Nome:<br>
+	    		<input type="text" name="lastname" value=""><br><br>
+	    		<input type="submit" value="Submit">
+	  		</fieldset>
+			
+		</form>
+	</div>
+	
+	<div class="conteudo">
+		<h1 class="titulos">Formulário 02</h1>
+		<form action="#" method="post" accept-charset="utf-8" id="formulario02" class="formularios">
+			<fieldset>
+	    		<legend>Informações Pessoas:</legend>
+	    		Primeiro Nome:<br>
+	    		<input type="text" name="firstname" value=""><br>
+	    		Sobre Nome:<br>
+	    		<input type="text" name="lastname" value=""><br><br>
+	    		<input type="submit" value="Submit">
+	  		</fieldset>
+		</form>
+	</div>
+
+	<div>
+		<p>Elemento Input</p>
+		<input type="text" name="primeiro_nome" value="" id="primeiro-nome" class="entrada"><br>
+		<p>Elemento Input password</p>	
+		 <input type="password" name="psw"><br>
+		 <p>Elemento Input Submit</p>
+		 <input type="submit" value="Enviar"><br>
+		 <p>Elemento Input Reset</p>
+		 <input type="reset" value="Redefinir"><br>
+		<p>Elemento select</p>
+		<select name="carros1" size="3" id="selecionar-opcoes">
+  			<option value="volvo">Volvo</option>
+  			<option value="saab">Saab</option>
+  			<option value="fiat">Fiat</option>
+  			<option value="audi" selected>Audi</option>
+		</select>
+		<select name="carros2" id="selecionar-opcoes">
+  			<option value="volvo">Volvo</option>
+  			<option value="saab">Saab</option>
+  			<option value="fiat">Fiat</option>
+  			<option value="audi" selected>Audi</option>
+		</select>
+		<select name="carros3" size="4" multiple>
+  			<option value="volvo">Volvo</option>
+  			<option value="saab">Saab</option>
+  			<option value="fiat">Fiat</option>
+  			<option value="audi">Audi</option>
+		</select><br>
+		<p>Elemento Text Area</p>
+		<textarea name="menssagem" style="width:400px; height:100px">
+			The cat was playing in the garden.
+		</textarea><br>
+		<p>Elemento Button</p>
+		<button type="button" onclick="alert('Olá button!')">Clique aqui!</button><br><br>
+		<p>Elemento input Radio</p>
+		<form>
+  			<input type="radio" name="genero" value="Masculino" checked> Masculino<br>
+  			<input type="radio" name="genero" value="Feminino"> Feminino<br>
+  			<input type="radio" name="genero" value="Outro"> Outro
+		</form><br>
+
+		<p>Elemento input checkbox</p>
+		<form>
+  			<input type="checkbox" name="veiculo1" value="Bicicleta"> Eu tenho uma bicicleta<br>
+  			<input type="checkbox" name="veiculo2" value="Carro"> Eu tenho um carro
+		</form><br>
+
+		<p>Elemento input button</p>
+		<input type="button" onclick="alert('Olá input botão!')" value="Clicar botão"><br>
+
+		<p>Elemento input color</p>
+		<form>
+  			Selecione uma cor:
+  			<input type="color" name="favcolor">
+		</form><br>
+
+		<p>Elemento input Data</p>
+		<form>
+  			Selecione uma data:
+  			<input type="date" name="bday">
+		</form><br>
+
+		<p>Elemento input E-mail</p>
+		<form>
+  			E-mail:
+  			<input type="email" name="email">
+		</form><br>
+
+		<p>Elemento input Month</p>
+		<form>
+  			Aniversário (mês e ano):
+  			<input type="month" name="bdaymonth">
+		</form><br>
+		<p>Elemento input Número</p>
+		<form>
+  			Quantidade (entre 1 e 5):
+  			<input type="number" name="quantity" min="1" max="5">
+		</form>
+		<p>Elemento input range</p>
+		<form>
+  			<input type="range" name="points" min="0" max="10">
+		</form><br>
+		<p>Elemento input search</p>
+		<form>
+  			Busca:
+  			<input type="search" name="googlesearch">
+		</form><br>
+
+		<p>Elemento input telefone</p>
+		<form>
+  			Telefone:
+  			<input type="tel" name="usrtel">
+		</form>
+		<form>
+  			Select a hora:
+  			<input type="time" name="usr_time">
+		</form>
+
+		<form>
+		  Entre com sua homepage:
+		  <input type="url" name="homepage">
+		</form>
+
+		<form>
+		  Selecione a semana:
+		  <input type="week" name="week_year">
+		</form>
+
+	</div>
+
+
+</body>
+</html>

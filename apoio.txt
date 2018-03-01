@@ -1,22 +1,46 @@
-non-breaking space									&nbsp;	&#160;
-			<	less than							&lt;	&#60;
-			>	greater than						&gt;	&#62;
-			&	ampersand							&amp;	&#38;
-			"	double quotation mark				&quot;	&#34;
-			'	single quotation mark (apostrophe)	&apos;	&#39;
-			¢	cent								&cent;	&#162;
-			£	pound								&pound;	&#163;
-			¥	yen									&yen;	&#165;
-			€	euro								&euro;	&#8364;
-			©	copyright							&copy;	&#169;
-			®	registered trademark				&reg;	&#174;
-			∀	&#8704;								&forall;
-			∂	&#8706;								&part;	
-			∃	&#8707;								&exist;	
-			∅	&#8709;								&empty;	
-			∇	&#8711;								&nabla;	
-			∈	&#8712;								&isin;	
-			∉	&#8713;								&notin;	
-			∋	&#8715;								&ni;	
-			∏	&#8719;								&prod;	
-			∑	&#8721;								&sum;
+non-breaking space										&nbsp;	&#160;
+<					less than							&lt;	&#60;
+>					greater than						&gt;	&#62;
+&					ampersand							&amp;	&#38;
+"					double quotation mark				&quot;	&#34;
+'					single quotation mark (apostrophe)	&apos;	&#39;
+¢					cent								&cent;	&#162;
+£					pound								&pound;	&#163;
+¥					yen									&yen;	&#165;
+€					euro								&euro;	&#8364;
+©					copyright							&copy;	&#169;
+®					registered trademark				&reg;	&#174;
+∀					&#8704;								&forall;
+∂					&#8706;								&part;	
+∃					&#8707;								&exist;	
+∅					&#8709;								&empty;	
+∇					&#8711;								&nabla;	
+∈					&#8712;								&isin;	
+∉					&#8713;								&notin;	
+∋					&#8715;								&ni;	
+∏					&#8719;								&prod;	
+∑					&#8721;								&sum;
+
+Atributos para formulário
+Atributo		Descrição
+accept-charset	Especificar o conjunto de caracteres no envio do formulário (default: charset da página).
+action			Especificar a url que receberá os dados.
+autocomplete	Especificar se o browser autocompletará o formulário (default: on).
+enctype			Especificar o encoding na submissão dos dados (default: url-encoded).
+method			Especificar o método de envio HTTP dos dados (default: GET).
+name			Especificar um nome para identificar o formulário (DOM: document.forms.name).
+novalidate		Especificar que o browser não deve validar o formulário.
+target			especificar o target para o envio (default: _self).
+
+Atributos para input
+Atributos	Descrição
+disabled	Desabilita o componente para entrada de dados
+max			Especifica o valor max para um input
+maxlength	Especifica um quantidade de caracteres max para input
+min			Especifica o valor min para o input
+pattern		Especifica um regex para aplicar no input
+readonly	Especifica que o input é somente leitura
+required	Especifica que o input deve ser obrigatorio
+size	    Especifica o comprimento para o input
+step	    Especifica um intervalo numero para o input
+value	    Especifica o valor padrao para o input
