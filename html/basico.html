@@ -18,6 +18,19 @@
 	<h5>H5 - Título quinta maior relevância</h5>
 	<h6>H6 - Título sexta maior relevância</h6>
 	<hr />
+	<h3> Sobre o viewport </h3>
+	<p>
+		Browsers para dispositivos móveis, tal como o Fennec, renderizam as páginas em uma "janela" virtual (o viewport), que costuma ser maior que a tela, fazendo com que não seja necessário "espremer" todo o layout da página para caber em uma janela pequena (o que faria "quebrar" muitos sites não otimizados para visualização em dispositivos móveis). Os usuários podem deslocar e aumentar diferentes áreas da página para visualização.
+	</p>
+	<p>
+		Um site tipicamente otimizado para dispositivos móveis, contém algo como o que segue:
+			meta name="viewport" content="width=device-width, initial-scale=1"
+
+		A propriedade width controla o tamanho da viewport. O valor desta propriedade pode ser definido com um número específico de píxels como por exemplo width=600 ou com um valor especial chamado device-width que representa a largura da onde o conteúdo está sendo apresentado em pixels de CSS considerando uma escala de 100%. (Ainda há as propriedades height e device-height, as quais podem ser úteis para páginas com elementos que mudam de posição baseado na altura da viewport.)
+
+		A propriedade initial-scale controla o nível de amplificação quando a página é carregada pela primeira vez. As propriedades maximum-scale, minimum-scale, e user-scalable controlam a permissão para o usuário efetuar aumento ou diminuição da página.
+	</p>
+	<hr />	
 	<h1>Parágrafos</h1>
 	<p>
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat ex, pharetra eget porttitor sit amet, tristique eget turpis. In dictum ante in velit egestas, non consectetur ex commodo. Praesent malesuada aliquet dignissim. Proin elementum dictum dolor, consectetur elementum arcu dignissim at. Aliquam massa augue, malesuada id velit ac, porttitor luctus arcu. Nam efficitur ipsum sit amet varius aliquam. Phasellus non ultrices sem, eu auctor ante.

@@ -36,7 +36,7 @@ table {
 }
 
 
-#main-header {  border: 1px solid red; }
-#main-title {  background-color: black; color: white;  }
+#main-header {  border: 1px solid red; padding: 20px; background-color: lightcoral;}
+#main-title {   color: black;  }
 
 
