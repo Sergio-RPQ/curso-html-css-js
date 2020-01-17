@@ -4,7 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cadastro clientes genérico</title>
-	<link rel="stylesheet" type="text/css" href="css/cadastro_clientes.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/cadastro_clientes.css">-->
+	<!--<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">-->
+	<!--<link rel="stylesheet" href="bulma-0.8.0/css/bulma.css">-->
+	<!--<link rel="stylesheet" href="materialize/css/materialize.min.css" />-->
+	<!--<link rel="stylesheet" href="pure-release-1.0.1/pure-min.css">-->
+	<!--<link rel="stylesheet" href="Semantic-UI-CSS-master/semantic.min.css" />-->
+	<!--<link rel="stylesheet" href="Skeleton-2.0.4/css/skeleton.css" />-->
 </head>
 
 <body>
@@ -17,8 +23,16 @@
 				<legend>Cadastro de clientes</legend>
 
 				<label for="razaosocial">Razão Social:</label>
-				<input type="text" name="razaosocial">
+				<input type="text" id="razaosocial" name="razaosocial">
 
+				<label for="nomefantasia">Nome Fantasia:</label>
+				<input type="text" id="nomefantasia" name="nomefantasia">
+
+				<label for="cnpj">CNPJ:</label>
+				<input type="text" id="cnpj" name="cnpj">
+
+				<label for="ie">Insc Estadual:</label>
+				<input type="text" id="ie" name="ie">
 			</fieldset>
 			
 		</form>	
@@ -27,3 +41,10 @@
 
 <script src="js/cadastro_clientes.js"></script>
 </html>
+
+<!--
+	Usando o atributo "for"
+	<label for="User">Click me</label>
+	<input type="text" id="User" name="Name" />
+
+-->
