@@ -38,5 +38,19 @@ table {
 
 #main-header {  border: 1px solid red; padding: 20px; background-color: lightcoral;}
 #main-title {   color: black;  }
+#cadastro-cliente {  border: 1px solid black; padding: 10em;}
+#field-cadastro-cliente { border: 1px solid black;  }
 
+input[name="razaosocial"] {border: 1px solid green;}
+
+/*
+    Seletor Seleção
+    E[foo]  seleciona elementos E com atributo foo
+    E[foo  = "bar"] seleciona elementos E com atributo foo cujo valor é bar
+    E[foo ~= "bar"] seleciona elementos E com atributo foo cujo valor é uma lista de valores e um deles é bar
+    E[foo ^= "bar"] seleciona elementos E com atributo foo cujo valor começa com a string bar
+    E[foo $= "bar"] seleciona elementos E com atributo foo cujo valor termina com a string bar
+    E[foo *= "bar"] seleciona elementos E com atributo foo cujo valor contém a string bar
+    E[foo |= "pt"]  seleciona elementos E com atributo foo cujo valor é do tipo pt-* ou pt
+*/
 
